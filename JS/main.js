@@ -16,7 +16,13 @@ let arr3 = [
 ]
 
 
-function country(elem) {
+function countryU(elem) {
   return elem.country == 'Ukraine';
 }
-console.log(arr3.every(country));
+function countryC(elem) {
+  return elem.country == 'Cuba';
+}
+console.log(arr3.every(countryU));
+console.log(arr3.some(countryC));
+
+
