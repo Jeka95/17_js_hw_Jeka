@@ -25,4 +25,10 @@ function countryC(elem) {
 console.log(arr3.every(countryU));
 console.log(arr3.some(countryC));
 
+let arr4 = [1, 'string', [3, 4], 5, [6, 7]];
+
+arr4 = arr4.filter(function (elem) {
+  return Array.isArray(elem);
+})
+console.log(arr4);
 
