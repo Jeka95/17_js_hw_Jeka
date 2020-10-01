@@ -8,3 +8,13 @@ console.log(sum);
 let arr2 = [5, 6, 7, 8, 9];
 arr2 = arr2.map(elem => elem * elem);
 console.log(arr2);
+
+let arr3 = [
+  { name: 'Ivan', country: 'Ukraine' },
+  { name: 'Petro', country: 'Ukraine' },
+  { name: 'Miguel', country: 'Cuba' }
+]
+console.log(arr3.some(function (elem) {
+  elem.country == 'Ukraine';
+}
+));
