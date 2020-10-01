@@ -14,7 +14,9 @@ let arr3 = [
   { name: 'Petro', country: 'Ukraine' },
   { name: 'Miguel', country: 'Cuba' }
 ]
-console.log(arr3.some(function (elem) {
-  elem.country == 'Ukraine';
+
+
+function country(elem) {
+  return elem.country == 'Ukraine';
 }
-));
+console.log(arr3.every(country));
